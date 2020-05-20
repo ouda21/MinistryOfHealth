@@ -1,0 +1,34 @@
+.landingPageTitle {
+    color: black;
+    font-size: 60px;
+    text-transform: lowercase;
+  }
+
+li.nav-item {
+    font-size: 24px;
+    padding: 0 2px 0 20px;
+    color: black;
+    text-transform: uppercase;
+}
+a.nav-link {
+    color: black;
+}
+
+.navbar-brand {
+    color: #000;
+}
+.card-deck {
+    margin: 30px 0;
+}
+hr {
+    margin: 0.2em 0;
+}
+hr.black {
+    border-top: 1.5px solid black;
+}
+hr.red {
+    border-top: 1.5px solid #f80606;
+}
+hr.green {
+    border-top: 1.5px solid #068110;
+}
