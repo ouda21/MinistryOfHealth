@@ -34,5 +34,8 @@ hr.green {
 }
 .card {
     border: none;
-    background-color: #ffffff;
+}
+
+.card-title{
+    text-transform: uppercase;
 }

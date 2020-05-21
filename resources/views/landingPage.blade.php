@@ -62,7 +62,7 @@
              </div>
             </div>
             <div class="card">
- <img class="card-img-top" src="{{ asset('images/landingPage_feedback3.png') }}" alt="Card image cap">          
+ <img class="card-img-top" src="{{ asset('images/landingPage_feedback4.png') }}" alt="Card image cap">          
               <div class="card-body">
                 <h5 class="card-title">Feedback</h5>
                 <p class="card-text">Gravida neque convallis a cras semper auctor. 
