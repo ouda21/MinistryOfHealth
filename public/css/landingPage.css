@@ -17,9 +17,6 @@ a.nav-link {
 .navbar-brand {
     color: #000;
 }
-.card-deck {
-    margin: 30px 0;
-}
 hr {
     margin: 0.2em 0;
 }
@@ -32,10 +29,29 @@ hr.red {
 hr.green {
     border-top: 1.5px solid #068110;
 }
+
+.card-deck {
+    margin: 50px 0 20px 0;
+}
 .card {
     border: none;
 }
 
 .card-title{
     text-transform: uppercase;
+}
+.card-text{
+    font-size: 18px;
+}
+
+.footer-titles{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.footer-details{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.col {
+    text-align: center;
 }

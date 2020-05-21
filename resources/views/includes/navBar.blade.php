@@ -53,14 +53,30 @@
             <footer class="mastfoot">
                 <div class="inner">
                     <div class="row align-items-end">
-                        <div class="col">
-                          One of three columns
+                        <div class="col mt-1">
+                         <h5 class="footer-titles">contact us</h5>
+                         <p class="footer-details">
+                             Afya Centre, Cathedral Road<br>
+                             TELEPHONE: +2547 192 2930<br>
+                             EMAIL: ministryofhealth@health.co.ke
+                         </p>
                         </div>
                         <div class="col">
-                          One of three columns
+                         <h5 class="footer-titles">external links</h5>
+                         <p class="footer-details">
+                            Presidency<br>
+                            eCitizen Website<br>
+                            Huduma Centre Kenya<br>
+                         </p>
                         </div>
                         <div class="col">
-                          One of three columns
+                         <h5 class="footer-titles">others</h5>
+                         <p class="footer-details">
+                            Policies<br>
+                            Tenders<br>
+                            Reports<br>
+                            
+                         </p>
                         </div>
                       </div>
                 </div>
