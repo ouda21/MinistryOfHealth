@@ -1,89 +1,6 @@
-<!DOCTYPE html>
-<head>
-<title>ABOUT US</title>
- <!-- Required meta tags -->
- <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@extends('includes.navBar')
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
- <style>
-  .container-fluid {
-  position: relative;
-  width: 100% !important;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  font-size: 18px;
-}
-
-.background { 
-  width: 100%;
-  height: 500px;
-  margin:0px;
-  /*background-position-x: 100%;*/
-  opacity: 0.6;
-}
-  .jumbotron {
-    background-color: white;
-    /*background-image: url('/images/health3.jpg');
-   /* background-position-x: 100%;
-   /* background-size: 100%;
-    height: 500px;
-    width: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat, repeat;*/
-  }
-
-  .card-deck{
-      border-block-color: white !important;
-      background-position-x: 100%;
-      background-attachment: fixed;
-  }
-
-.management{
-    margin-top: 30px;
-    text-align: center;
-    color: darkblue;
-}
-
-.departments, .feedback{
-    margin-top: 40px;
-    text-align: center;
-    color: darkblue;
-}
-
-.cardset2{
-      margin-top: 20px;
-  }
-  
-  .accordion{
-    margin-top: 20px;
-    margin-left: 250px;
-    margin-right: 250px;
-  }
-   
-.card-title{
-       color: darkblue;
-       text-align: center;
-   }
-.my-4{
-     color:black;
-     border-width: 2px;
- }
-
-    </style>
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
-
+@section('content')
 
 <div class="jumbotron  jumbotron-fluid" >
 <div class="container-fluid">
@@ -339,9 +256,6 @@
 </div>
 </div>
 
-<!--<div class="feedback">
-    <h3>FEEDBACK</h3>
-</div>-->
 
-</body>
-</html>
+
+        @endsection
