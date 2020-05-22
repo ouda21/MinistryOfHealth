@@ -16,9 +16,9 @@
           <p class="card-text">Condimentum mattis pellentesque id nibh. B
           ibendum enim facilisis gravida neque convallis a cras semper auctor. 
           Dictumst vestibulum rhoncus.</p>
+      </div>
   </div>
-  
-  </div>
+
   <div class="card">
     <img class="card-img-top" src="{{ asset('images/landingPage_guidelines3.png') }}"  alt="Card image cap">          
     <div class="card-body">
@@ -29,6 +29,7 @@
     Ut faucibus pulvinar elementum integer enim neque</p>
     </div>
     </div>
+
   <div class="card">
     <img class="card-img-top" src="{{ asset('images/landingPage_location.png') }}"  alt="Card image cap">          
     <div class="card-body">
@@ -52,6 +53,7 @@
     Et netus et malesuada fames ac turpis egestas integer.</p>
     </div>
     </div>
+
   <div class="card">
     <img class="card-img-top" src="{{ asset('images/landingPage_aboutUs.png') }}"  alt="Card image cap">          
     <div class="card-body">
@@ -60,10 +62,10 @@
       Egestas diam in arcu cursus. Mi quis hendrerit dolor magna. 
       Lorem ipsum dolor sit amet. Tortor at auctor urna nunc id cursus. 
     Est pellentesque elit ullamcorper dignissim cras tincidunt.
-
     </p>
   </div>
   </div>  
+
   <div class="card">
     <img class="card-img-top" src="{{ asset('images/landingPage_feedback4.png') }}" alt="Card image cap">          
     <div class="card-body">

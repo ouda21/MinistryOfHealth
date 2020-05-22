@@ -23,50 +23,48 @@
         <link href="{{ asset('css/aboutUs.css')}}" rel="stylesheet" type="text/css">
 
     </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="60">
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
         
-  <div class="container-fluid">
-            <nav class="navbar navbar-expand-md  navbar-light bg-light">
-            <a class="navbar-brand" href="#"> <img src="{{ url('/images/mohlogo1.png') }}" style="height:90px; width:100px;" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item acitve">
-                            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Health care</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/aboutUs">About Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <hr class="black">
-            <hr class="red">
-            <hr class="green">
+  <div class="container">
+    <nav class="navbar navbar-expand-md  navbar-light bg-light">
+    <a class="navbar-brand" href="/"> <img src="{{ url('/images/mohlogo1.png') }}" style="height:90px; width:100px;" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item acitve">
+                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Health care</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/aboutUs">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <hr class="black">
+    <hr class="red">
+    <hr class="green">
         </div>
 
         {{-- CONTENT --}}
-        {{-- <div class="container"> --}}
+        <main class="py-4">
+            @yield('content')
+        </main>
 
-            <main class="py-4">
-                @yield('content')
-            </main>
-        {{-- </div> --}}
-
-            {{-- FOOTER --}}
-            <div class="container">
+        {{-- FOOTER --}}
+        <div class="container">
 
             <hr class="black">
             <hr class="red">
             <hr class="green">
+
             <footer class="mastfoot">
                 <div class="inner">
                     <div class="row align-items-end">
