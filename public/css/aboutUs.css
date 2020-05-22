@@ -12,8 +12,8 @@
   .aboutUsImage {
     background: 
     linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
     ),
     /* url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg); */
     url('/images/health3.jpg');
