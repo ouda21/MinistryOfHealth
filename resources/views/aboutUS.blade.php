@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="jumbotron  jumbotron-fluid" >
+{{-- <div class="jumbotron  jumbotron-fluid" >
 <div class="container-fluid">
   <img class="background" src="{{ url('/images/health3.jpg') }}" alt="Health" width="1000" height="300">
   <div class="bottomleft">
@@ -11,6 +11,11 @@
     </div>
     </div>
 
+</div> --}}
+<div class="backgroundImage aboutUsImage">
+  <div id="aboutUsPage">
+    <h1 class="landingPageTitle text-uppercase align-text-bottom">about the ministry</h1>
+  </div>
 </div>
 
 <div class="container-fluid">

@@ -29,6 +29,7 @@
     Ut faucibus pulvinar elementum integer enim neque</p>
     </div>
     </div>
+
   <div class="card">
     <img class="card-img-top" src="{{ asset('images/landingPage_location.png') }}"  alt="Card image cap">          
     <div class="card-body">
