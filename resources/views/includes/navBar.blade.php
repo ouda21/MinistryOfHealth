@@ -44,19 +44,17 @@
             <hr class="green">
         </div>
         {{-- CONTENT --}}
-        {{-- <div class="container"> --}}
+        <main class="py-4">
+            @yield('content')
+        </main>
 
-            <main class="py-4">
-                @yield('content')
-            </main>
-        {{-- </div> --}}
-
-            {{-- FOOTER --}}
-            <div class="container">
+        {{-- FOOTER --}}
+        <div class="container">
 
             <hr class="black">
             <hr class="red">
             <hr class="green">
+
             <footer class="mastfoot">
                 <div class="inner">
                     <div class="row align-items-end">
