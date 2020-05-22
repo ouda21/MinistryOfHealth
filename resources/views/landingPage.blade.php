@@ -3,7 +3,7 @@
 @section('content')
   <div class="backgroundImage">
     <div id="landingPage">
-      <h1 class="landingPageTitle text-uppercase align-text-bottom">kenya minstry of health</h1>
+      <h1 class="landingPageTitle text-uppercase align-text-bottom">kenya ministry of health</h1>
     </div>
   </div>
 <div class="container">
