@@ -23,8 +23,9 @@
         <link href="{{ asset('css/aboutUs.css')}}" rel="stylesheet" type="text/css">
 
     </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
-        
+<body  data-spy="scroll" data-target=".navbar" data-offset="60">
+{{-- <div class='{{ $backgroundImageClass or "default"}}'> --}}
+    <div>
   <div class="container">
     <nav class="navbar navbar-expand-md  navbar-light bg-light">
     <a class="navbar-brand" href="/"> <img src="{{ url('/images/mohlogo1.png') }}" style="height:90px; width:100px;" alt="logo"></a>
@@ -52,6 +53,8 @@
     <hr class="red">
     <hr class="green">
         </div>
+{{-- </div> --}}
+
 
         {{-- CONTENT --}}
         <main class="py-4">
@@ -72,8 +75,8 @@
                          <h5 class="footer-titles">contact us</h5>
                          <p class="footer-details">
                              Afya Centre, Cathedral Road<br>
-                             TELEPHONE: +2547 192 2930<br>
-                             EMAIL: ministryofhealth@health.co.ke
+                             telephone: +254-20-2717077<br>
+                             email: ps@health.go.ke
                          </p>
                         </div>
                         <div class="col">

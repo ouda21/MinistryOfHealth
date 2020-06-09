@@ -1,7 +1,7 @@
 @extends('includes.navBar')
 
 @section('content')
-  <div class="backgroundImage">
+  <div class="backgroundImage landingPageImage">
     <div id="landingPage">
       <h1 class="landingPageTitle text-uppercase align-text-bottom">kenya minstry of health</h1>
     </div>
