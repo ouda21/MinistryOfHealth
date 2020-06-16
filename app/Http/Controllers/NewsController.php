@@ -23,7 +23,7 @@ class NewsController extends Controller
 
     public function store(Request $request)
     {
-        $news = $request->isMethod('put') ?  News::findOrFail($request->id): new News;
+        $news = $request->isMethod('PUT') ?  News::findOrFail($request->id): new News;
 
 
         $news->id = $request->input('id');
