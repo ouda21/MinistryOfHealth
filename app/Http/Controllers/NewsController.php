@@ -6,6 +6,7 @@ use App\News;
 use Illuminate\Http\Request;
 use App\Http\Resources\NewsResource;
 use App\Http\Requests;
+use Illuminate\Support\Facades\DB;
 
 class NewsController extends Controller
 {
@@ -16,9 +17,10 @@ class NewsController extends Controller
      */
     public function index()
     {
-       $news = News::all();
 
-       return  NewsResource::collection($news);
+        $news = DB::table('news')->get();
+
+        return view('welcome', ['news' => $news]);
     }
 
     public function store(Request $request)
@@ -32,10 +34,19 @@ class NewsController extends Controller
         $news->image = $request->input('image');
 
 
-        if($news->save())
-        {
+//        $check = $this->checkifExists($news->id );
+        if ($news->save()) {
             return new NewsResource($news);
         }
+//        if(is_null($check)) {
+//
+//        }
+//        else
+//        {
+//            $this->truncate();
+//            $news->save();
+//        }
+//        return new NewsResource($news);
     }
 
 
@@ -57,4 +68,18 @@ class NewsController extends Controller
             return new NewsResource($news);
         }
     }
+
+//    public function truncate(){
+//        News::query()->truncate();
+//    }
+//    public function checkifExists($user_id){
+//        $news = DB::table('news')->where('id', '=',$user_id)->first();
+//
+//        $news->id;
+//
+//    }
+
+//    public function getAll(){
+//
+//    }
 }
