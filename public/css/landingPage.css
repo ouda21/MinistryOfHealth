@@ -1,37 +1,52 @@
-.backgroundImage{
-    background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    /*url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg);*/
-    url('/images/health2.jpg');
-  background-size: cover;
-  height: 84vh;
-}
 body {
-    background-color: #f7f7f7 !important;
-
+    background-color: #ffffff !important;
 }
-
+.backgroundImage {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+.landingPageImage{
+    background-image: 
+   /* linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), */
+   /*url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg);
+   */
+    url('/images/landingPage_background7.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88vh;
+}
+.py-4 {
+    padding-top: 0.5em !important;
+}
 .landingPageTitle {
-    font-size: 60px;
+    font-size: 70px;
     word-spacing: 100vw;
-    position: absolute;
-    /* top: 50%; */
-    left: 50%;
+   /* top: 50%;
+    */
+    left: 45%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: left;
     position: absolute;
     bottom: 2px;
-    /* left: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+   /* left: 20px;
+    */
     margin: 0;
-  }
-  .bg-light {
-      background-color: #f7f7f7 !important;
-  }
-
+}
+.bg-light {
+    background-color: transparent !important;
+}
+.navbar {
+    padding: 0px 16px;
+}
 li.nav-item {
     font-size: 24px;
     padding: 0 2px 0 20px;
@@ -44,7 +59,6 @@ li.nav-item {
 a.nav-link {
     color: black;
 }
-
 .navbar-brand {
     color: #000;
 }
@@ -60,21 +74,18 @@ hr.red {
 hr.green {
     border-top: 2px solid #0ac019;
 }
-
 .card-deck {
     margin: 50px 0 20px 0;
 }
 .card {
     border: none;
 }
-
 .card-title{
     text-transform: uppercase;
 }
 .card-text{
     font-size: 18px;
 }
-
 .footer-titles{
     text-transform: uppercase;
     font-weight: 600;
