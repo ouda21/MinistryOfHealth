@@ -21,6 +21,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/landingPage.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/aboutUs.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/feedback.css')}}" rel="stylesheet" type="text/css">
 
     </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -44,6 +45,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/aboutUs">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('feedback.create')}}">Feedback</a>
                 </li>
             </ul>
         </div>
@@ -79,9 +83,9 @@
                         <div class="col">
                          <h5 class="footer-titles">external links</h5>
                          <p class="footer-details">
-                            Presidency<br>
-                            eCitizen Website<br>
-                            Huduma Centre Kenya<br>
+                            <a href="https://www.president.go.ke/">Presidency</a><br>
+                            <a href="https://www.ecitizen.go.ke/">eCitizen Website</a><br>
+                            <a href="https://www.hudumakenya.go.ke/">Huduma Centre Kenya</a><br>
                          </p>
                         </div>
                         <div class="col">

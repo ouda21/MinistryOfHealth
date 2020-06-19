@@ -20,3 +20,10 @@ Route::get('/', function () {
 Route::get('aboutUs', function () {
     return view('aboutUs');
 });
+
+Route::get('feedback', function () {
+    return view('feedback');
+});
+
+Route::resource('feedback','FeedbackController');
+Route::post('feedback','FeedbackController@store');
