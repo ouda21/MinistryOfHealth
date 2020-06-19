@@ -23,10 +23,16 @@
             </ul>
 
             <ul class="nav navbar-nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/posts">Blog</a></li>
+            @if (Auth::guest())
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/posts">Resources</a></li>
+            @else
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/posts">Resources</a></li>
+            @endif
             </ul>
 
             <!-- Right Side Of Navbar -->
