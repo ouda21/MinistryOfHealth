@@ -57,7 +57,7 @@ class FeedbackController extends Controller
        
         $feedback->save();
     
-       return redirect()->route('feedback.create')->with('success', 'Your Comment has been Sent Successfully. Thankyou for your Contribution to the Ministry Of Health,Kenya.');
+       return redirect()->route('feedback.create')->with('success', 'Your Comment has been saved successfully.Thankyou for your Contribution to the Ministry Of Health,Kenya.');
     }
 
     /**

@@ -1,11 +1,54 @@
 @extends('includes.navBar')
 
 @section('content')
-  <div class="backgroundImage landingPageImage">
+ <!-- <div class="backgroundImage landingPageImage">
     <div id="landingPage">
       <h1 class="landingPageTitle text-uppercase align-text-bottom">kenya ministry of health</h1>
     </div>
+  </div>-->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active"> 
+      <img src="{{ url('/images/landingPage_background5.jpg')}}" alt="NEWS 1" >
+      <div class="carousel-caption" style="color: yellow;">
+        <h3>NEWS 1 </h3>
+        <p>News 1 Caption</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img  src="{{ url('/images/landingPAge_background6.jpg')}}" alt="NEWS 2">
+      <div class="carousel-caption" style="color: yellow;">
+        <h3>NEWS 2</h3>
+        <p>News 2 Caption</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img  src="{{ url('/images/landingPage_background7.jpg')}}" alt="NEWS 3">
+      <div class="carousel-caption" style="color: yellow;">
+        <h3>NEWS 3 </h3>
+        <p>News 3 Caption</p>
+      </div> 
+    </div>
   </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
 <div class="container">
 
   <div class="card-deck">
