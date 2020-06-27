@@ -35,3 +35,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
     Route::delete('news/{id}','NewsController@destroy');
 
+    Route::get('clear','NewsController@truncate');
+

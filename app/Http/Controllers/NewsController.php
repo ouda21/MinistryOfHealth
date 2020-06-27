@@ -18,9 +18,10 @@ class NewsController extends Controller
     public function index()
     {
 
-        $news = DB::table('news')->get();
+        $allnews = News::all();
+//        $row_count = News::get()->count();
 
-        return view('welcome', ['news' => $news]);
+        return view('welcome',compact('allnews'));
     }
 
     public function store(Request $request)
@@ -33,23 +34,36 @@ class NewsController extends Controller
         $news->link = $request->input('link');
         $news->image = $request->input('image');
 
+//        return $this->truncate();
 
-//        $check = $this->checkifExists($news->id );
-        if ($news->save()) {
-            return new NewsResource($news);
-        }
+//        $check = $this->checkifExists($news->id);
+//        if ($news->save()) {
+//            return new NewsResource($news);
+//        }
 //        if(is_null($check)) {
-//
+//            $news->save();
 //        }
 //        else
 //        {
 //            $this->truncate();
 //            $news->save();
 //        }
-//        return new NewsResource($news);
+//        $this->truncate();
+        $news->save();
+        return new NewsResource($news);
+    }
+    public function truncate(){
+        News::query()->truncate();
+    }
+    public function checkifExists($id){
+        $news = DB::table('news')->where('id', '=',$id)->first();
+
+        return $news->id;
     }
 
+    public function getAll(){
 
+    }
     public function show($id)
     {
         //Get a single news value
@@ -68,18 +82,4 @@ class NewsController extends Controller
             return new NewsResource($news);
         }
     }
-
-//    public function truncate(){
-//        News::query()->truncate();
-//    }
-//    public function checkifExists($user_id){
-//        $news = DB::table('news')->where('id', '=',$user_id)->first();
-//
-//        $news->id;
-//
-//    }
-
-//    public function getAll(){
-//
-//    }
 }
