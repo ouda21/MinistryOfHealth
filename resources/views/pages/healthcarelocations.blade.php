@@ -10,7 +10,10 @@
   <div class="six wide column">
     
     <div class="ui segment " style="max-height:600px;overflow:scroll">
+      <div class="ui grid">
       <h3 class="display-6 text-info">Health Location Results</h3>
+      <button class="ui button blue ml-lg-5" id="more">Contact health centre</button>
+      </div>
       <div class="ui divided items items" id="places">
         <div class="list-group" id="item">
             <br>
@@ -18,7 +21,7 @@
         </div>
       </div>
     
-      <button class="ui button blue" id="more">Contact health centre</button>
+      
     </div>
   </div>
   <div class="ten wide column segment ui" id="map">
